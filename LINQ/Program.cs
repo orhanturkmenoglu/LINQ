@@ -116,6 +116,35 @@ namespace LINQ
             // IntersectTest();
             // ExceptTest();
 
+            // SumTest(products);
+
+            // AverageTest(products);
+
+            // SortTest(products);
+
+
+            
+
+        }
+
+        private static void SortTest(List<Product> products)
+        {
+            // Sort(): sıralama yapmamızı saglar.
+            products.Sort();
+        }
+
+        private static void AverageTest(List<Product> products)
+        {
+            // Average : Ortalaam hesaplamamızı saglar.
+            var result = products.Average(p => p.UnitsPrice);
+            Console.WriteLine(result);
+        }
+
+        private static void SumTest(List<Product> products)
+        {
+            // Sum() : toplama yapmamızı saglar.
+            var result = products.Sum(p => p.UnitsPrice);
+            Console.WriteLine(result);
         }
 
         private static void ExceptTest()
